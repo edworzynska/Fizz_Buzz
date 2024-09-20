@@ -3,14 +3,13 @@ import java.util.Scanner;
 
 public class Game {
     public static void fizz_Buzz() {
-        System.out.println("Welcome to FizzBuzz!\n*Type 0 to exit*\n\nEnter the number:");
 
         try {
             fizz_Buzz_Loop();
         }
         catch (InputMismatchException e){
             System.out.println("Input is not a valid number! Try again: ");
-            fizz_Buzz_Loop();
+            fizz_Buzz();
         }
     }
     public static void fizz_Buzz_Loop(){
