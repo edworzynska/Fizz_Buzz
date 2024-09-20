@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Game {
     public static void fizz_Buzz() {
-        Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to FizzBuzz!\n*Type 0 to exit*\n\nEnter the number:");
 
         try {
@@ -13,8 +12,6 @@ public class Game {
             System.out.println("Input is not a valid number! Try again: ");
             fizz_Buzz_Loop();
         }
-
-        System.out.println("Goodbye!");
     }
     public static void fizz_Buzz_Loop(){
         Scanner userInput = new Scanner(System.in);
@@ -36,5 +33,6 @@ public class Game {
             }
         }
         System.out.println("Goodbye!");
+        userInput.close();
     }
 }
